@@ -32,6 +32,7 @@ String generateHTML(String message = "") {
             </form>
     )rawliteral";
 
+    // אם יש הודעה (כמו הצלחה או כישלון), מוסיף אותה לדף ה-HTML
     if (message.length() > 0) {
         html += "<p>" + message + "</p>";
     }
@@ -41,7 +42,7 @@ String generateHTML(String message = "") {
         </html>
     )rawliteral";
 
-    return html;
+    return html; // מחזיר את קוד ה-HTML שנוצר
 }
 
 #endif
