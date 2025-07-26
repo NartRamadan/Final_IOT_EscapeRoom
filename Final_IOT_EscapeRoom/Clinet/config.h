@@ -19,4 +19,21 @@
 int currentStage = 0; // משתנה שמייצג את שלב המשחק הנוכחי
 bool challengeSolved[4] = {false, false, false, false}; // מערך למעקב אחרי מצב פתרון החידות
 
+// משתנים לחידה 2 - בקרת טמפרטורה
+float initialTemperature = 0; // טמפרטורה התחלתית
+bool temperatureChallengeActive = false; // האם חידת הטמפרטורה פעילה
+unsigned long temperatureStartTime = 0; // זמן התחלת האתגר
+
+// משתנים לחידה 3 - רצף הבהובים
+int ledSequence[8]; // רצף ההבהובים (8 הבהובים)
+int currentSequenceIndex = 0; // אינדקס נוכחי ברצף
+bool sequencePlaying = false; // האם הרצף מתנגן
+bool waitingForInput = false; // האם ממתין לקלט מהמשתמש
+int userInputIndex = 0; // אינדקס הקלט של המשתמש
+
+// משתנים לחידה 4 - מדידת מרחק
+unsigned long distanceStartTime = 0; // זמן התחלת מדידת המרחק
+bool distanceChallengeActive = false; // האם חידת המרחק פעילה
+bool distanceMaintained = false; // האם המרחק נשמר
+
 #endif
